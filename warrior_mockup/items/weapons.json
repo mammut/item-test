@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "path": "sword1.png",
+    "center": {"x": 0.5, "y": 0.792}
+  },
+  {
+    "id": 1,
+    "path": "sword2.png",
+    "center": {"x": 0.5, "y": 0.791}
+  },
+  {
+    "id": 2,
+    "path": "sword3.png",
+    "center": {"x": 0.5, "y": 0.78}
+  }
+]
