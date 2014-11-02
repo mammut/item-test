@@ -77,6 +77,13 @@ $(function(){
     update();
     function update() {
       self.ctx.clearRect(0, 0, self.gameSize.x, self.gameSize.y);
+      self.ctx.beginPath();
+      self.ctx.moveTo(0, 380);
+      self.ctx.lineTo(self.gameSize.x, 380);
+      self.ctx.stroke();
+      self.ctx.moveTo(170, 0);
+      self.ctx.lineTo(170, self.gameSize.y);
+      self.ctx.stroke();
       p2.render();
       p.render();
       p3.render();
@@ -86,6 +93,12 @@ $(function(){
       p.pose = "relax";
       update();
     });
+
+    $('#damage').on('click', function(){
+      p.pose = "damage";
+      update();
+    });
+
     $('#attack').on('click', function(){
       p.pose = "attack1";
       update();
@@ -114,29 +127,35 @@ $(function(){
       p.helmet = new Helmet($this.attr('id'), p);
       update();
     });
+    $('.tt').on('click', function(){
+      $this = $(this);
+      console.log($this);
+      p.playerType = $this.attr('id');
+      update();
+    });
   };
 
   window.onload = function() {
-    $.get('/warrior_mockup/poses/poses.json', function(data){
+    $.get('resources/poses/poses.json', function(data){
       poses = data;
-      ["warrior"].forEach(function(playerType, i) {
-        ["relax", "attack1", "attack2", "attack3"].forEach(function(pose, j) {
-          images[playerType + '_' + pose] = loader.addImage('/warrior_mockup/poses/' + playerType + '/' + poses[playerType][pose].path);
+      ["warrior", "archer"].forEach(function(playerType, i) {
+        ["relax", "attack1", "attack2", "attack3", "damage"].forEach(function(pose, j) {
+          images[playerType + '_' + pose] = loader.addImage('resources/poses/' + playerType + '/' + pose + '.png');
         });
       });
     });
 
-    $.get('/warrior_mockup/items/helmets.json', function(data){
+    $.get('resources/items/helmets.json', function(data){
       helmets = data;
       _.each(data, function(i){
-        images['helmets_'+i.id] = loader.addImage('/warrior_mockup/items/helmets/' + i.path);
+        images['helmets_'+i.id] = loader.addImage('resources/items/helmets/' + i.path);
       });
     });
 
-    $.get('/warrior_mockup/items/weapons.json', function(data){
+    $.get('resources/items/weapons.json', function(data){
       weapons = data;
       _.each(data, function(i){
-        images['weapons_'+i.id] = loader.addImage('/warrior_mockup/items/weapons/' + i.path);
+        images['weapons_'+i.id] = loader.addImage('resources/items/weapons/' + i.path);
       });
     }).done(function(){
       loader.start();
