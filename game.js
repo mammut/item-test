@@ -10,7 +10,7 @@ $(function(){
     this.x = x || pos.x;
     this.y = y || pos.y;
     this.game = game;
-    this.pose = "damage";
+    this.pose = "relax";
     this.playerType = "warrior";
     this.helmet = new Helmet(2, this);
     this.weapon = new Weapon(2, this);
@@ -72,8 +72,11 @@ $(function(){
     var self =  this;
 
     var p = new Player(this,170, 380);
+    p.playerType = "warrior";
     var p2 = new Player(this);
+    p2.playerType = "wizard";
     var p3 = new Player(this, 80, 540);
+    p3.playerType = "archer";
     update();
     function update() {
       self.ctx.clearRect(0, 0, self.gameSize.x, self.gameSize.y);
@@ -129,8 +132,23 @@ $(function(){
     });
     $('.tt').on('click', function(){
       $this = $(this);
-      console.log($this);
-      p.playerType = $this.attr('id');
+      switch($this.attr('id')){
+        case "warrior":
+          p.playerType = "warrior";
+          p2.playerType = "wizard";
+          p3.playerType = "archer";
+          break;
+        case "archer":
+          p.playerType = "archer";
+          p2.playerType = "wizard";
+          p3.playerType = "warrior";
+          break;
+        case "wizard":
+          p.playerType = "wizard";
+          p2.playerType = "archer";
+          p3.playerType = "warrior";
+          break;
+      }
       update();
     });
   };
@@ -138,7 +156,7 @@ $(function(){
   window.onload = function() {
     $.get('resources/poses/poses.json', function(data){
       poses = data;
-      ["warrior", "archer"].forEach(function(playerType, i) {
+      ["warrior", "archer", "wizard"].forEach(function(playerType, i) {
         ["relax", "attack1", "attack2", "attack3", "damage"].forEach(function(pose, j) {
           images[playerType + '_' + pose] = loader.addImage('resources/poses/' + playerType + '/' + pose + '.png');
         });
