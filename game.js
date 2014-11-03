@@ -10,7 +10,7 @@ $(function(){
     this.x = x || pos.x;
     this.y = y || pos.y;
     this.game = game;
-    this.pose = "relax";
+    this.pose = "damage";
     this.playerType = "warrior";
     this.helmet = new Helmet(2, this);
     this.weapon = new Weapon(2, this);
