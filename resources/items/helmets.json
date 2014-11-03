@@ -1,17 +1,17 @@
 [
   {
     "id": 0,
-    "path": "mask3.png",
-    "center": {"x": 0.55, "y": 0.66}
+    "path": "warrior.png",
+    "center": {"x": 0.55, "y": 0.57}
   },
   {
     "id": 1,
-    "path": "mask2.png",
-    "center": {"x": 0.46, "y": 0.55}
+    "path": "archer.png",
+    "center": {"x": 0.55, "y": 0.46}
   },
   {
     "id": 2,
-    "path": "mask1.png",
-    "center": {"x": 0.54, "y": 0.60}
+    "path": "wizard.png",
+    "center": {"x": 0.56, "y": 0.72}
   }
 ]

@@ -73,10 +73,13 @@ $(function(){
 
     var p = new Player(this,170, 380);
     p.playerType = "warrior";
+    p.helmet = new Helmet(0, p);
     var p2 = new Player(this);
     p2.playerType = "wizard";
+    p2.helmet = new Helmet(2, p2);
     var p3 = new Player(this, 80, 540);
     p3.playerType = "archer";
+    p3.helmet = new Helmet(1, p3);
     update();
     function update() {
       self.ctx.clearRect(0, 0, self.gameSize.x, self.gameSize.y);
@@ -126,10 +129,22 @@ $(function(){
     });
     $('.casco').on('click', function(){
       $this = $(this);
-      console.log($this);
       p.helmet = new Helmet($this.attr('id'), p);
       update();
     });
+
+    $('.attack').on('click', function(){
+      $this = $(this);
+      p.pose = "attack" + $this.attr('id');
+      update();
+    });
+
+    $('.relax').on('click', function(){
+      $this = $(this);
+      p.pose = "relax";
+      update();
+    });
+
     $('.tt').on('click', function(){
       $this = $(this);
       switch($this.attr('id')){
