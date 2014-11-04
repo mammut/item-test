@@ -11,7 +11,7 @@ $(function(){
     this.y = y || pos.y;
     this.game = game;
     this.pose = "relax";
-    this.playerType = "warrior";
+    this.playerType = "wizard";
     this.helmet = new Helmet(2, this);
     this.weapon = new Weapon(2, this);
   }
