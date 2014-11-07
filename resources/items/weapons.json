@@ -2,7 +2,7 @@
   {
     "id": 0,
     "path": "sword1.png",
-    "center": {"x": 0.5, "y": 0.792}
+    "center": {"x": 0.53, "y": 0.75}
   },
   {
     "id": 1,
@@ -12,6 +12,21 @@
   {
     "id": 2,
     "path": "sword3.png",
-    "center": {"x": 0.5, "y": 0.78}
+    "center": {"x": 0.60, "y": 0.74}
+  },
+  {
+    "id": 3,
+    "path": "default.png",
+    "center": {"x": 0.60, "y": 0.74}
+  },
+  {
+    "id": 4,
+    "path": "staff1.png",
+    "center": {"x": 0.48, "y": 0.40}
+  },
+  {
+    "id": 5,
+    "path": "bow1.png",
+    "center": {"x": 0.68, "y": 0.45}
   }
 ]
