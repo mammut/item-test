@@ -13,5 +13,45 @@
     "id": 2,
     "path": "wizard.png",
     "center": {"x": 0.56, "y": 0.72}
+  },
+  {
+    "id": 3,
+    "path": "android.png",
+    "center": {"x": 0.65, "y": 0.66}
+  },
+  {
+    "id": 4,
+    "path": "applace.png",
+    "center": {"x": 0.50, "y": 0.68}
+  },
+  {
+    "id": 5,
+    "path": "bbhat.png",
+    "center": {"x": 0.44, "y": 0.66}
+  },
+  {
+    "id": 6,
+    "path": "default.png",
+    "center": {"x": 0.50, "y": 0.66}
+  },
+  {
+    "id": 7,
+    "path": "lechuza.png",
+    "center": {"x": 0.50, "y": 0.565}
+  },
+  {
+    "id": 8,
+    "path": "lego.png",
+    "center": {"x": 0.50, "y": 0.58}
+  },
+  {
+    "id": 9,
+    "path": "pony.png",
+    "center": {"x": 0.45, "y": 0.65}
+  },
+  {
+    "id": 10,
+    "path": "wuqi.png",
+    "center": {"x": 0.55, "y": 0.50}
   }
 ]
