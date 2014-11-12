@@ -53,5 +53,85 @@
     "id": 10,
     "path": "wuqi.png",
     "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 11,
+    "path": "blond-wig.png",
+    "name": "Uno de nosotros",
+    "description": "Un estilo apropiado para cuando has perdido tu voluntad en manos de un culto de niños diabólicos.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 12,
+    "path": "corgi.png",
+    "name": "Sombrero de Corgi",
+    "description": "Al pequeño animal le advirtieron que no siguiera jugando con ese niño extraño o terminaría siendo una prenda de vestir...",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 13,
+    "path": "cyborg.png",
+    "name": "Unidad Cerebral TI-89",
+    "description": "Algunos guerreros pretenden trascender de su condición humana volviendose uno con la máquina.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 14,
+    "path": "donald.png",
+    "name": "Yelmo de Donalus",
+    "description": "Pocos conocen el origen real de este objeto, sin embargo cuenta la leyenda que fue fabricado del cráneo de una extraña criatura parlante.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 15,
+    "path": "ponytail.png",
+    "name": "Cola de Caballo",
+    "description": "Contrario a lo que muchos expertos declaran, este peinado no requiere dañar a algún caballo.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 16,
+    "path": "ranger-blue.png",
+    "class": "wizard",
+    "name": "Mate-Ranger Azul",
+    "description": "El casco del legendario héroe, perteneciente al grupo de los poderosos Mate-Rangers. Se dice que quien lo ocupe heredará sus poderes.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 17,
+    "path": "ranger-green.png",
+    "class": "archer",
+    "name": "Mate-Ranger Verde",
+    "description": "El casco del legendario héroe, perteneciente al grupo de los poderosos Mate-Rangers. Se dice que quien lo ocupe heredará sus poderes.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 18,
+    "path": "ranger-red.png",
+    "class": "warrior",
+    "name": "Mate-Ranger Rojo",
+    "description": "El casco del legendario héroe, perteneciente al grupo de los poderosos Mate-Rangers. Se dice que quien lo ocupe heredará sus poderes.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 19,
+    "path": "saiyan.png",
+    "name": "Visor Matemático",
+    "description": "Con este visor, se pueden fácilmente resolver problemas muy complejos, pero el fabricante dice que se vuelve impreciso con cifras que están sobre 9000.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 20,
+    "path": "viper.png",
+    "name": "Máscara de Viper",
+    "description": "Recordando al estimado robot del equipo Phyrex.",
+    "center": {"x": 0.55, "y": 0.50}
+  },
+  {
+    "id": 21,
+    "path": "vulcan.png",
+    "name": "Peinado Vulcano",
+    "description": "Al usar el pelo en este estilo, se te garantiza larga vida y prosperidad.",
+    "center": {"x": 0.55, "y": 0.50}
   }
 ]

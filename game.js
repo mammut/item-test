@@ -73,8 +73,8 @@ $(function(){
 
     var p = new Player(this, 170, 380);
     p.playerType = "warrior";
-    p.helmet = new Helmet(10, p);
-    p.weapon = new Weapon(4, p);
+    p.helmet = new Helmet(0, p);
+    p.weapon = new Weapon(0, p);
     var p2 = new Player(this);
     p2.playerType = "wizard";
     p2.helmet = new Helmet(10, p2);
@@ -125,14 +125,14 @@ $(function(){
       }, 200);
     });
 
-    $('.espada').on('click', function(){
+    $('.espada').on('change', function(evt){
       $this = $(this);
-      p.weapon = new Weapon($this.attr('id'), p);
+      p.weapon = new Weapon(evt.target.valueAsNumber, p);
       update();
     });
-    $('.casco').on('click', function(){
+    $('.casco').on('change', function(evt){
       $this = $(this);
-      p.helmet = new Helmet($this.attr('id'), p);
+      p.helmet = new Helmet(evt.target.valueAsNumber, p);
       update();
     });
 
@@ -199,7 +199,6 @@ $(function(){
 
     loader.addCompletionListener(function() {
         new Game();
-        console.log(images);
     });
   };
 });
