@@ -28,5 +28,25 @@
     "id": 5,
     "path": "bow1.png",
     "center": {"x": 0.68, "y": 0.45}
+  },
+  {
+    "id": 6,
+    "path": "bow2.png",
+    "center": {"x": 0.60 , "y": 0.49}
+  },
+  {
+    "id": 7,
+    "path": "bow3.png",
+    "center": {"x": 0.60 , "y": 0.46}
+  },
+  {
+    "id": 8,
+    "path": "staff2.png",
+    "center": {"x": 0.50 , "y": 0.38}
+  },
+  {
+    "id": 9,
+    "path": "staff3.png",
+    "center": {"x": 0.55 , "y": 0.38}
   }
 ]

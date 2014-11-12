@@ -72,17 +72,17 @@ $(function(){
     var self =  this;
 
     var p = new Player(this, 170, 380);
-    p.playerType = "warrior";
+    p.playerType = "wizard";
     p.helmet = new Helmet(10, p);
-    p.weapon = new Weapon(4, p);
+    p.weapon = new Weapon(9, p);
     var p2 = new Player(this);
     p2.playerType = "wizard";
     p2.helmet = new Helmet(10, p2);
-    p2.weapon = new Weapon(4, p2);
+    p2.weapon = new Weapon(9, p2);
     var p3 = new Player(this, 80, 540);
     p3.playerType = "archer";
     p3.helmet = new Helmet(10, p3);
-    p3.weapon = new Weapon(4, p3);
+    p3.weapon = new Weapon(9, p3);
     update();
     function update() {
       self.ctx.clearRect(0, 0, self.gameSize.x, self.gameSize.y);
