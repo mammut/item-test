@@ -71,10 +71,21 @@ $(function(){
     this.gameSize = { x: this.ctx.canvas.width, y: this.ctx.canvas.height };
     var self =  this;
 
+    var helmet = 0, weapon = 0;
+    var temp = null;
+    if((temp = sessionStorage.getItem('helmet')) != null){
+      $('.casco').val(temp);
+      helmet = temp;
+    }
+    if((temp = sessionStorage.getItem('weapon')) != null){
+      $('.espada').val(temp);
+      weapon = temp;
+    }
+
     var p = new Player(this, 170, 380);
     p.playerType = "warrior";
-    p.helmet = new Helmet(0, p);
-    p.weapon = new Weapon(0, p);
+    p.helmet = new Helmet(helmet, p);
+    p.weapon = new Weapon(weapon, p);
     var p2 = new Player(this);
     p2.playerType = "wizard";
     p2.helmet = new Helmet(10, p2);
@@ -127,11 +138,13 @@ $(function(){
 
     $('.espada').on('change', function(evt){
       $this = $(this);
+      sessionStorage.setItem('weapon', evt.target.valueAsNumber);
       p.weapon = new Weapon(evt.target.valueAsNumber, p);
       update();
     });
     $('.casco').on('change', function(evt){
       $this = $(this);
+      sessionStorage.setItem('helmet', evt.target.valueAsNumber);
       p.helmet = new Helmet(evt.target.valueAsNumber, p);
       update();
     });
