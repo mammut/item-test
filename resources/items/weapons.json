@@ -34,62 +34,62 @@
     "path": "bow4.png",
     "name": "Arco Zigma",
     "description": "Cada flecha que dispara esta poderosa arma llega más lejos que la anterior, como si sumara el poder de cada tiro...",
-    "center": {"x": 0.68, "y": 0.45}
+    "center": {"x": 0.52, "y": 0.50}
   },
   {
     "id": 7,
     "path": "bow5.png",
     "name": "Arco de Rubidio",
     "description": "Este misterioso artefacto emite un resplandor continuo, parece como si la luz quedase atrapada dentro de él.",
-    "center": {"x": 0.68, "y": 0.45}
+    "center": {"x": 0.48, "y": 0.46}
   },
   {
     "id": 8,
     "path": "bow6.png",
     "name": "Arco Espiral",
     "description": "Que no te engañe su anticuada apariencia, dentro de los espirales se encuentra un complejo sistema que amplifica la fuerza del tirador.",
-    "center": {"x": 0.68, "y": 0.45}
+    "center": {"x": 0.78, "y": 0.46}
   },
   {
     "id": 9,
     "path": "staff4.png",
     "name": "Escobillón Misterioso",
     "description": "Cuenta la leyenda que antes de morir un poderoso mago guardó todo su poder en él, al parecer era el único objeto que tenía a la mano...",
-    "center": {"x": 0.48, "y": 0.40}
+    "center": {"x": 0.48, "y": 0.45}
   },
   {
     "id": 10,
     "path": "staff5.png",
     "name": "Vara del Destino",
     "description": "Se dice que la gema que tiene en la parte superior guarda los secretos del futuro de la humanidad, pero nadie ha logrado descrifrarlos.",
-    "center": {"x": 0.48, "y": 0.40}
+    "center": {"x": 0.50, "y": 0.50}
   },
   {
     "id": 11,
     "path": "staff6.png",
     "name": "Bastón de Luz",
     "description": "Nadie conoce sus orígenes precisos, solo que vino de un lugar muy, muy lejano.",
-    "center": {"x": 0.48, "y": 0.40}
+    "center": {"x": 0.50, "y": 0.52}
   },
   {
     "id": 12,
     "path": "sword4.png",
     "name": "Espada Delta",
     "description": "El mango de esta espada lleva una inscripción que dice 'Tus acciones serán la diferencia entre la vida y la muerte'.",
-    "center": {"x": 0.60, "y": 0.74}
+    "center": {"x": 0.50, "y": 0.76}
   },
   {
     "id": 13,
     "path": "sword5.png",
     "name": "Espada Vorpal",
     "description": "Cuando no escribía clásicos infantiles como Alicia en el País de las Maravillas, Lewis Carroll era un renombrado matemático, especializado en lógica y álgebra matricial. Forjamos esta espada en honor a su trabajo.",
-    "center": {"x": 0.60, "y": 0.74}
+    "center": {"x": 0.48, "y": 0.76}
   },
   {
     "id": 14,
     "path": "sword6.png",
     "name": "Sable de Plata",
     "description": "Pocos saben que antes de que el Reino Aritmético fuera invadido por los monstruos, teníamos otro problema: Piratas!, este sable es un recuerdo de aquellos tiempos.",
-    "center": {"x": 0.60, "y": 0.74}
+    "center": {"x": 0.56, "y": 0.73}
   }
 ]
