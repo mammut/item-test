@@ -55,14 +55,14 @@
     "path": "staff4.png",
     "name": "Escobillón Misterioso",
     "description": "Cuenta la leyenda que antes de morir un poderoso mago guardó todo su poder en él, al parecer era el único objeto que tenía a la mano...",
-    "center": {"x": 0.48, "y": 0.45}
+    "center": {"x": 0.48, "y": 0.55}
   },
   {
     "id": 10,
     "path": "staff5.png",
     "name": "Vara del Destino",
     "description": "Se dice que la gema que tiene en la parte superior guarda los secretos del futuro de la humanidad, pero nadie ha logrado descrifrarlos.",
-    "center": {"x": 0.50, "y": 0.50}
+    "center": {"x": 0.50, "y": 0.60}
   },
   {
     "id": 11,
